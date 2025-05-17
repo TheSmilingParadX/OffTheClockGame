@@ -34,7 +34,7 @@ public class AnomalyController : MonoBehaviour
     void Update()
     {
         // Global interaction handler - decreases counter for any E press
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             // Decrement interaction counter even if not interacting with a specific object
             UseInteraction();

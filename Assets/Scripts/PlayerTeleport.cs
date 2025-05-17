@@ -10,7 +10,7 @@ public class PlayerTeleport : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Debug.Log("E is pressed.");
+            Debug.Log("S is pressed.");
             if (currentTeleporter != null)
             {
                 Debug.Log("Teleporting...");
