@@ -8,6 +8,7 @@ TagManager:
   - GameManager
   - StageUI
   - InteractionUI
+  - Audio
   layers:
   - Default
   - TransparentFX
