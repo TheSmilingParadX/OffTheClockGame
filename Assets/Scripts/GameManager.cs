@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         UpdateStageUI();
     }
 
+
     public void AdvanceToNextStage()
     {
         if (!stageComplete)
