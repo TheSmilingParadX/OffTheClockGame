@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("Stage Settings")]
-	[SerializeField] private string mainStageName;
     [SerializeField] private string firstStageName;
     [SerializeField] private List<string> randomStageNames = new List<string>();
     [SerializeField] private int maxStageCount = 5;
@@ -16,15 +15,12 @@ public class GameManager : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private GameObject stageCounterUI;
     [SerializeField] private TMPro.TextMeshProUGUI stageText;
-	[SerializeField] private GameObject menu1;
-	[SerializeField] private GameObject menu2;
 
     private int currentStage = 1;
     private string lastRandomStage = "";
     private bool stageComplete = false;
     private bool anomalyPresent = false;
     private bool anomalyFound = false;
-	private bool paused = false;
 
     private void Awake()
     {
@@ -53,54 +49,7 @@ public class GameManager : MonoBehaviour
         currentStage = 1;
         UpdateStageUI();
     }
-	
-	private void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.Escape))
-		{
-			if(!paused)
-			{
-				Pause();
-			}
-			else
-			{
-				Unpause();
-			}
-		}
-	}
-	
-	public void Pause()
-	{
-		paused = true;
-		menu1.SetActive(true);
-		menu2.SetActive(false);
-		Time.timeScale = 0.0f;
-	}
-	
-	public void Unpause()
-	{
-		paused = false;
-		menu1.SetActive(false);
-		menu2.SetActive(false);
-		Time.timeScale = 1.0f;
-	}
-	
-	public void OpenSettings()
-	{
-		menu1.SetActive(false);
-		menu2.SetActive(true);
-	}
-	
-	public void CloseSettings()
-	{
-		menu1.SetActive(true);
-		menu2.SetActive(false);
-	}
-	
-	public void GoToMain()
-	{
-		SceneManager.LoadScene(mainStageName);
-	}
+
 
     public void AdvanceToNextStage()
     {
@@ -181,8 +130,6 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-		
-		Unpause();
     }
 
     private void SetupStageAnomaly()
