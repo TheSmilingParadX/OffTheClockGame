@@ -38,6 +38,7 @@ public class MenuScript : MonoBehaviour
 		paused = true;
 		menu1.SetActive(true);
 		menu2.SetActive(false);
+		Time.timeScale = 0.0f;
 	}
 	
 	public void Unpause()
@@ -45,6 +46,7 @@ public class MenuScript : MonoBehaviour
 		paused = false;
 		menu1.SetActive(false);
 		menu2.SetActive(false);
+		Time.timeScale = 1.0f;
 	}
 	
 	public void OpenSettings()
