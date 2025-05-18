@@ -8,6 +8,8 @@ TagManager:
   - GameManager
   - StageUI
   - InteractionUI
+  - Menu1
+  - Menu2
   layers:
   - Default
   - TransparentFX

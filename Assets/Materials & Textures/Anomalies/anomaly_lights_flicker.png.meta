@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      anomaly_lights_flicker_0: -2051400469880900019
+      anomaly_lights_flicker_1: -3688714460102610870
+      anomaly_lights_flicker_2: 2938096406317459071
+      anomaly_lights_flicker_3: -1498673469804579233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

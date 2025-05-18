@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      anomaly_lights_out_0: -3990255990822646779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
