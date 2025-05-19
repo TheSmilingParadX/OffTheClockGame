@@ -2853,12 +2853,12 @@ GameObject:
   - component: {fileID: 1119053319}
   - component: {fileID: 1119053318}
   - component: {fileID: 1119053317}
-  - component: {fileID: 1119053324}
   - component: {fileID: 1119053316}
   - component: {fileID: 1119053315}
   - component: {fileID: 1119053314}
   - component: {fileID: 1119053323}
   - component: {fileID: 1119053322}
+  - component: {fileID: 1119053324}
   m_Layer: 0
   m_Name: Player_Walk-Sheet_0
   m_TagString: Player
@@ -3000,7 +3000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fda0e659337fbf4b91215ff6e0859b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 18
   animManager: {fileID: 1119053316}
 --- !u!212 &1119053320
 SpriteRenderer:
@@ -3197,7 +3197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLight: {fileID: 1817832684}
   normalIntensity: 1
-  flickerLowIntensity: 0.3
+  flickerLowIntensity: 0.004
   firstFlickerInterval: 3
   secondFlickerInterval: 1
 --- !u!1 &1138578005
@@ -4346,7 +4346,7 @@ MonoBehaviour:
   - Stage005
   - Stage006
   - Stage007
-  maxStageCount: 6
+  maxStageCount: 5
   stageCounterUI: {fileID: 0}
   stageText: {fileID: 0}
 --- !u!4 &1538880640

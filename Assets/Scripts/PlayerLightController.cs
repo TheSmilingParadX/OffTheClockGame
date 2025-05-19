@@ -10,7 +10,7 @@ public class PlayerLightController : MonoBehaviour
 
     [Header("---------- Flicker Settings ----------")]
     [SerializeField] private float normalIntensity = 1.0f;
-    [SerializeField] private float flickerLowIntensity = 0.3f;
+    [SerializeField] private float flickerLowIntensity = 0.15f;
     [SerializeField] private float firstFlickerInterval = 3.0f;
     [SerializeField] private float secondFlickerInterval = 1.0f;
 
@@ -89,7 +89,14 @@ public class PlayerLightController : MonoBehaviour
             case 0:
                 Debug.Log("Third wrong interaction - light off and reset");
                 TurnOffLight();
-                StartCoroutine(ResetAfterDelay(1.5f));
+                if (!anomalyController.IsAnomalyFound())
+                {
+                    StartCoroutine(ResetAfterDelay(1.5f));
+                }
+                else
+                {
+                    StartCoroutine(RestoreLightAfterDelay(1.0f));
+                }
                 break;
         }
     }
@@ -137,5 +144,11 @@ public class PlayerLightController : MonoBehaviour
         {
             GameManager.Instance.ResetToStageOne();
         }
+    }
+
+    IEnumerator RestoreLightAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        RestoreLight();
     }
 }

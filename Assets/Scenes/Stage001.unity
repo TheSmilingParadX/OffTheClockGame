@@ -4711,7 +4711,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4910,12 +4910,12 @@ GameObject:
   - component: {fileID: 1712225604}
   - component: {fileID: 1712225603}
   - component: {fileID: 1712225602}
-  - component: {fileID: 1712225609}
   - component: {fileID: 1712225601}
   - component: {fileID: 1712225600}
   - component: {fileID: 1712225599}
   - component: {fileID: 1712225608}
   - component: {fileID: 1712225607}
+  - component: {fileID: 1712225609}
   m_Layer: 0
   m_Name: Player_Walk-Sheet_0
   m_TagString: Player
@@ -5057,7 +5057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fda0e659337fbf4b91215ff6e0859b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 18
   animManager: {fileID: 1712225601}
 --- !u!212 &1712225605
 SpriteRenderer:
@@ -5254,7 +5254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLight: {fileID: 523338860}
   normalIntensity: 1
-  flickerLowIntensity: 0.3
+  flickerLowIntensity: 0.004
   firstFlickerInterval: 3
   secondFlickerInterval: 1
 --- !u!1 &1717790031
