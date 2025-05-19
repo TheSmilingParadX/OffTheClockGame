@@ -253,10 +253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ambienceSource: {fileID: 1219453690}
   SFXSource: {fileID: 1857511608}
-  musicSource: {fileID: 0}
   footsteps: {fileID: 8300000, guid: a0331ddda09284b4cbceb8e63fe93f97, type: 3}
   ambience: {fileID: 8300000, guid: e5422cdc7021ba24a918de7a65d01e65, type: 3}
-  music: {fileID: 0}
 --- !u!4 &28598172
 Transform:
   m_ObjectHideFlags: 0

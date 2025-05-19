@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string firstStageName;
     [SerializeField] private List<string> randomStageNames = new List<string>();
     [SerializeField] private int maxStageCount = 5;
+    [SerializeField] private string mainMenuSceneName = "StageMAIN";
 
     [Header("UI References")]
     [SerializeField] private GameObject stageCounterUI;
@@ -63,14 +64,21 @@ public class GameManager : MonoBehaviour
         }
 
         currentStage++;
-        
+
         if (currentStage > maxStageCount)
         {
-            currentStage = 1;
+            ReturnToMainMenu();
+            return;
         }
 
         string nextStageName = GetNextStageName();
         SceneManager.LoadScene(nextStageName);
+    }
+
+    public void ReturnToMainMenu()
+    {
+        currentStage = 1;
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 
     public string GetNextStageName()
