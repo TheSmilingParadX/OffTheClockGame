@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 209192262}
   - component: {fileID: 209192264}
   m_Layer: 0
-  m_Name: Player_Walk-Sheet_0
+  m_Name: Player_Walk-Sheet_3
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLight: {fileID: 523338860}
   normalIntensity: 1
-  flickerLowIntensity: 0.004
+  flickerLowIntensity: 0.15
   firstFlickerInterval: 3
   secondFlickerInterval: 1
 --- !u!1 &306407970
@@ -1255,7 +1255,7 @@ GameObject:
   - component: {fileID: 523338859}
   - component: {fileID: 523338860}
   m_Layer: 0
-  m_Name: Light 2D
+  m_Name: Light 2D 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3205,8 +3205,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ambienceSource: {fileID: 1678929497}
   SFXSource: {fileID: 1907114912}
+  musicSource: {fileID: 0}
   footsteps: {fileID: 8300000, guid: a0331ddda09284b4cbceb8e63fe93f97, type: 3}
   ambience: {fileID: 8300000, guid: e5422cdc7021ba24a918de7a65d01e65, type: 3}
+  music: {fileID: 0}
 --- !u!4 &1148570586
 Transform:
   m_ObjectHideFlags: 0
