@@ -9,7 +9,7 @@ public class CutsceneManager : MonoBehaviour
 {
     [Header("Cutscene Settings")]
     [SerializeField] private float fadeDuration = 1.0f;
-    [SerializeField] private float textDisplayDuration = 4.0f;
+    [SerializeField] private float textDisplayDuration = 3.0f;
     [SerializeField] private float textFadeInDuration = 1.0f;
     [SerializeField] private float textFadeOutDuration = 1.0f;
     
