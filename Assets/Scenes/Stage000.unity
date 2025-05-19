@@ -4347,6 +4347,7 @@ MonoBehaviour:
   - Stage006
   - Stage007
   maxStageCount: 5
+  mainMenuSceneName: StageMAIN
   stageCounterUI: {fileID: 0}
   stageText: {fileID: 0}
 --- !u!4 &1538880640
