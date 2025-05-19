@@ -851,6 +851,7 @@ GameObject:
   - component: {fileID: 318535367}
   - component: {fileID: 318535366}
   - component: {fileID: 318535365}
+  - component: {fileID: 318535372}
   - component: {fileID: 318535364}
   - component: {fileID: 318535363}
   - component: {fileID: 318535362}
@@ -1180,6 +1181,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &318535372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318535361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3391f2ba8622143821a17d69bcf6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLight: {fileID: 523338860}
+  normalIntensity: 1
+  flickerLowIntensity: 0.3
+  firstFlickerInterval: 3
+  secondFlickerInterval: 1
 --- !u!1 &411165131
 GameObject:
   m_ObjectHideFlags: 0
@@ -6194,3 +6212,5 @@ SceneRoots:
   - {fileID: 964119152}
   - {fileID: 246767822}
   - {fileID: 937197130}
+  - {fileID: 1306259201}
+  - {fileID: 1148570586}
