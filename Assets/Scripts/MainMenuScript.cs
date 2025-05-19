@@ -6,6 +6,7 @@ public class MainMenuScript : MonoBehaviour
 	[Header("Stage Settings")]
 	[SerializeField] private string mainStageName;
     [SerializeField] private string firstStageName;
+	[SerializeField] private string cutsceneStageName = "StageCUTSCENE";
 	
 	[Header("UI References")]
 	[SerializeField] private GameObject menu1;
@@ -62,7 +63,14 @@ public class MainMenuScript : MonoBehaviour
 	
 	public void LoadStageOne()
 	{
-		SceneManager.LoadScene(firstStageName);
+		if (!string.IsNullOrEmpty(cutsceneStageName))
+		{
+			SceneManager.LoadScene(cutsceneStageName);
+		}
+		else
+		{
+			SceneManager.LoadScene(firstStageName);
+		}
 	}
 	
 	public void ExitGame()
